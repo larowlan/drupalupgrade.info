@@ -7,7 +7,7 @@
 
 box      = 'precise32'
 url      = 'http://files.vagrantup.com/' + box + '.box'
-hostname = 'd8'
+hostname = 'drupalinfo'
 domain   = 'dev'
 cpus     = '1'
 ram      = '1024'
