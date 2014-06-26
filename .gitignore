@@ -4,7 +4,6 @@ puppet/modules/*
 !puppet/modules/README.md
 puppet/.librarian
 puppet/.tmp
-app
 patches
 vendor
 bin
