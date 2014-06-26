@@ -1,4 +1,4 @@
-# The mysql configuration for Drupal 8.
+# The mysql configuration for Drupal.
 
 class drupal::mysql {
   class { 'mysql::server':

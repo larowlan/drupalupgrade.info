@@ -4,25 +4,25 @@
                be overridden with project specific configuration.
 -->
 
-<project name="vd8" default="prepare" phingVersion="2.4.11">
+<project name="drupalinfo" default="prepare" phingVersion="2.4.11">
 
   <!--               -->
   <!--  Properties   -->
   <!-- ============= -->
 
   <!-- Drupal -->
-  <property name="drupal.siteName" value="Drupal8" />
+  <property name="drupal.siteName" value="Drupal Upgrade Status" />
   <property name="drupal.email" value="user@example.com" />
   <property name="drupal.user" value="admin" />
-  <property name="drupal.pass" value="password" />
+  <property name="drupal.pass" value="power" />
   <property name="drupal.dir" value="${project.basedir}/app" />
 
   <!-- Mysql -->
-  <property name="mysql.host" value="d8.dev" />
+  <property name="mysql.host" value="drupalinfo.dev" />
   <property name="mysql.port" value="3306" />
-  <property name="mysql.database" value="d8" />
-  <property name="mysql.user" value="d8" />
-  <property name="mysql.pass" value="d8" />
+  <property name="mysql.database" value="drupalinfo" />
+  <property name="mysql.user" value="drupalinfo" />
+  <property name="mysql.pass" value="drupalinfo" />
   <property name="mysql.queryString" value="mysql://${mysql.user}:${mysql.pass}@${mysql.host}/${mysql.database}" />
 
   <!-- Drush -->
@@ -31,7 +31,7 @@
   <!-- Vagrant -->
   <property name="vagrant.dir" value="/vagrant" />
 
-  <!-- Globals for exec commands. The main goal of these were for fast failingin the bot. -->
+  <!-- Globals for exec commands. The main goal of these were for fast failing the bot. -->
   <property name="test.output" value="true" />
   <property name="test.passthru" value="true" />
 
@@ -59,10 +59,10 @@
           passthru="${test.passthru}" />
   </target>
 
-  <!-- Reinstall the Drupal 8 site. -->
+  <!-- Reinstall the site. -->
   <target name="reinstall"
           depends="prepare"
-          description="Reinstall the Drupal 8 site.">
+          description="Reinstall the Drupal site (warning removes all files/database).">
     <!-- Drop and create the database -->
     <exec command="${drush.cmd} sql-drop -y"
           logoutput="${test.output}"
@@ -86,9 +86,9 @@
     <phingcall target="simpletest:enable" />
   </target>
 
-  <!-- Install the Drupal 8 site. -->
+  <!-- Install the Drupal site. -->
   <target name="install"
-          description="Install the Drupal 8 site.">
+          description="Install the Drupal site.">
     <phingcall target="vagrant:run">
       <!-- After some properties for inside the Vagrant host. -->
       <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app site-install -y --db-url=${mysql.queryString} --account-mail=${drupal.email} --account-name=${drupal.user} --account-pass=${drupal.pass} --site-name=${drupal.siteName}" />

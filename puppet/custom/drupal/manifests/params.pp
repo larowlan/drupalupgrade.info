@@ -1,4 +1,4 @@
-# Drupal 8 common parameters.
+# Drupal common parameters.
 
 class drupal::params (
   $port                = '80',

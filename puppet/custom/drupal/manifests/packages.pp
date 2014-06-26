@@ -1,4 +1,4 @@
-# The packages Drupal 8 requires.
+# The packages Drupal requires.
 
 class drupal::packages {
   # We want to ensure apt is always updated first.

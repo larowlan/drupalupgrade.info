@@ -1,12 +1,12 @@
-# Default Drupal 8 development site.
+# Default Drupal development site.
 
 node default {
 
-  # Basic includes.	
+  # Basic includes.
   include drupal
 
   # Advanced includes.
-  drupal::site { 'd8':
+  drupal::site { 'drupalinfo':
     mysql_host => '%',
   }
 
