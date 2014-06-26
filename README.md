@@ -5,12 +5,27 @@ Drupal Upgrade dot info
 
 The code-base that powers the drupalupgrade.info for the D8CX initiative
 
+## Credits
+
+Code by d8CX team
+
+- Lee Rowlands (larowlan) (Previous Next)
+- Tim Plunkett (timplunkett) (Acquia)
+- Angela Byron (webchick) (Acquia)
+- Dave Reid (davereid) (Lullabot)
+- Kim Pepper (kim.pepper) (Previous Next)
+- Michael Schmid (schnitzel) (Amazee Labs)
+
+Project Management: Nick Waring (nickwaring89) (Previous Next)
+
+Vagrant/Puppet manifests: Adapted from github.com/nickshuch/vd8 by Nick Schuch (nick_schuch) (Previous Next)
+
 ## Roadmap
 
 * Phing targets.
 * Custom packer image to shorten provision time.
 
-## Requirements
+## Requirements for local dev
 
 ### Virtualbox (4.3.6)
 
@@ -61,17 +76,15 @@ WE REQUIRE THE "Vagrant Auto-network" PLUGIN AS MENTIONED ABOVE.
 
 ## Drupal
 
-Checkout the latest HEAD of Drupal 8:
+Adding Drupal:
 
 ```
-git clone --branch 8.x http://git.drupal.org/project/drupal.git app
+drush dl drupal
+mv drupal-7.{x} app
 ```
 
-To install
+To install (warning will delete all files and database)
 
 ```
 phing reinstall
 ```
-
-The above command can be run as many times as you like. It provides a good
-workflow for developing and testing.
