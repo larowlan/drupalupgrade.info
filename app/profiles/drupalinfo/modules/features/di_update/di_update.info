@@ -1,0 +1,15 @@
+name = DrupalUpgradeInfo Update
+core = 7.x
+description = Provides the update content type
+package = DrupalUpgradeInfo
+dependencies[] = di_project
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = node
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = field_project
+features[field_instance][] = node-update-body
+features[field_instance][] = node-update-field_project
+features[node][] = update

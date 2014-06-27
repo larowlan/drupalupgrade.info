@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the di_update feature.
+ */
+
+include_once 'di_update.features.inc';
