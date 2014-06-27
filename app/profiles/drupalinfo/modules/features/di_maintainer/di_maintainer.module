@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the di_maintainer feature.
+ */
+
+include_once 'di_maintainer.features.inc';
