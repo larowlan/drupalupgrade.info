@@ -33,3 +33,5 @@ dependencies[] = di_sprint
 dependencies[] = di_update
 dependencies[] = panels
 dependencies[] = views_content
+dependencies[] = bean
+dependencies[] = bean_panels

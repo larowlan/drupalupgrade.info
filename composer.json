@@ -1,9 +1,12 @@
 {
-  "require": {
+  "require-dev": {
     "drush/drush": "dev-master"
   },
   "minimum-stability": "dev",
   "config": {
     "bin-dir": "bin/"
+  },
+  "require": {
+    "symfony/yaml": "~2.2"
   }
 }

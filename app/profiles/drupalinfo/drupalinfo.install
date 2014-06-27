@@ -3,6 +3,7 @@
  * @file
  * Install, update and uninstall functions for the drupalinfo profile.
  */
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Implements hook_install().
@@ -52,7 +53,29 @@ function drupalinfo_install() {
       ->condition('name', $theme)
       ->execute();
   }
+  // Disable bartik.
+  db_update('system')
+    ->fields(array('status' => 0))
+    ->condition('type', 'theme')
+    ->condition('name', 'bartik')
+    ->execute();
   variable_set('theme_default', 'sparrow');
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
+
+  // Create default beans.
+  try {
+    foreach (file_scan_directory(__DIR__ . '/content', '/\.yml$/') as $file) {
+      // Files are named {entity_type}s.yml.
+      $entity_type = substr($file->filename, 0, -5);
+      $entities = Yaml::parse(file_get_contents($file->name));
+      foreach ($entities as $values) {
+        $entity = entity_create($entity_type, $values);
+        $entity->save();
+      }
+    }
+  }
+  catch (Exception $e) {
+    watchdog_exception('drupalinfo', $e);
+  }
 }
