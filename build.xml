@@ -84,6 +84,7 @@
     <!-- Install the site and simpletest -->
     <phingcall target="install" />
     <phingcall target="simpletest:enable" />
+    <phingcall target="views_ui:enable" />
   </target>
 
   <!-- Install the Drupal site. -->
@@ -101,6 +102,19 @@
     <phingcall target="vagrant:run">
       <!-- After some properties for inside the Vagrant host. -->
       <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app en -y simpletest" />
+    </phingcall>
+  </target>
+
+    <!-- Enable Views dev settings -->
+  <target name="views_ui:enable"
+          description="Enable the Views UI module.">
+    <phingcall target="vagrant:run">
+       <!-- After some properties for inside the Vagrant host. -->
+      <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app en -y views_ui" />
+    </phingcall>
+    <phingcall target="vagrant:run">
+      <!-- After some properties for inside the Vagrant host. -->
+      <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app views-dev" />
     </phingcall>
   </target>
 
