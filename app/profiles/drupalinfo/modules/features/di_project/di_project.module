@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the di_project feature.
+ */
+
+include_once 'di_project.features.inc';
