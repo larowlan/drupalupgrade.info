@@ -44,12 +44,15 @@ function drupalinfo_install() {
   // Update the menu router information.
   menu_rebuild();
 
-  // Enable the admin theme.
-  db_update('system')
-    ->fields(array('status' => 1))
-    ->condition('type', 'theme')
-    ->condition('name', 'seven')
-    ->execute();
+  // Enable the required themes.
+  foreach (array('seven', 'zen', 'sparrow') as $theme) {
+    db_update('system')
+      ->fields(array('status' => 1))
+      ->condition('type', 'theme')
+      ->condition('name', $theme)
+      ->execute();
+  }
+  variable_set('theme_default', 'sparrow');
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 }

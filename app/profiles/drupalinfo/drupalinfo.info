@@ -31,3 +31,5 @@ dependencies[] = di_sponsor
 dependencies[] = di_project
 dependencies[] = di_sprint
 dependencies[] = di_update
+dependencies[] = panels
+dependencies[] = views_content
