@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the di_sprint feature.
+ */
+
+include_once 'di_sprint.features.inc';
