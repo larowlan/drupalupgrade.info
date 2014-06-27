@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the di_blocks feature.
+ */
+
+include_once 'di_blocks.features.inc';
