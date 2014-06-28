@@ -31,6 +31,7 @@ dependencies[] = di_sponsor
 dependencies[] = di_project
 dependencies[] = di_sprint
 dependencies[] = di_update
+dependencies[] = di_blocks
 dependencies[] = panels
 dependencies[] = views_content
 dependencies[] = bean

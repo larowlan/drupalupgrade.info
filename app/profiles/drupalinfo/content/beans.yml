@@ -1,6 +1,6 @@
 extension-intro:
   title: Using this table
-  body:
+  field_body:
     und:
      - { value: 'The table shows the status of Drupal 8 ports for the most popular extensions' }
   delta: extension-intro
