@@ -1,0 +1,9 @@
+credits:
+  title: Credits
+  body:
+    und:
+     - { value: |
+      The table shows the status of Drupal 8 ports for the most popular extensions
+      format: 'rich_text' }
+  type: basic
+  uid: 1

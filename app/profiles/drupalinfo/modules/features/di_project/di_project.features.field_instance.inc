@@ -242,7 +242,7 @@ function di_project_field_default_field_instances() {
     'bundle' => 'project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Link the project to any sponsors who\'ve provided resources or assistance',
+    'description' => 'Optionally credit sponsors',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -363,9 +363,9 @@ function di_project_field_default_field_instances() {
   t('Crowd Funding Link');
   t('Enter any organisations or individuals the project maintainer would like to credit or thank');
   t('Enter the current status of this project\'s port.');
-  t('Link the project to any sponsors who\'ve provided resources or assistance');
   t('Link to any crowd funding efforts for this module.');
   t('Maintainers');
+  t('Optionally credit sponsors');
   t('Percent Complete');
   t('Priorities');
   t('Select one or more maintainers');
