@@ -2,8 +2,29 @@ credits:
   title: Credits
   body:
     und:
-     - { value: |
-      The table shows the status of Drupal 8 ports for the most popular extensions
-      format: 'rich_text' }
-  type: basic
+      -
+        value: |
+          Sometimes there is a need for strings to wrap over multiple lines for
+          readability
+        format: rich_text
+  type: page
   uid: 1
+
+project1:
+  title: Project 1
+  field_status:
+    und:
+      -
+        value: |
+          Working well
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Fix foo
+        format: rich_text
+      -
+        value: Test bar
+        format: rich_text

@@ -71,7 +71,7 @@ function drupalinfo_install() {
       $entities = Yaml::parse(file_get_contents(__DIR__ . '/content/' . $file->filename));
       foreach ($entities as $values) {
         $entity = entity_create($entity_type, $values);
-        $entity->save();
+        entity_save($entity_type, $entity);
       }
     }
   }
