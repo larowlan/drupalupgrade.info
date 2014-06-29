@@ -1,0 +1,11 @@
+name = DrupalUpgradeInfo editing
+description = Provides editing features and configuration
+core = 7.x
+package = DrupalUpgradeInfo
+dependencies[] = features
+dependencies[] = filter
+dependencies[] = wysiwyg
+dependencies[] = wysiwyg_filter
+features[features_api][] = api:2
+features[filter][] = rich_text
+features[wysiwyg][] = rich_text
