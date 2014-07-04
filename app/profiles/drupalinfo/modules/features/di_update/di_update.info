@@ -1,6 +1,6 @@
 name = DrupalUpgradeInfo Update
-core = 7.x
 description = Provides the update content type
+core = 7.x
 package = DrupalUpgradeInfo
 dependencies[] = di_project
 dependencies[] = entityreference

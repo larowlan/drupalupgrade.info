@@ -10,13 +10,19 @@ credits:
   type: page
   uid: 1
 
-project1:
-  title: Project 1
+token:
+  title: Token
+  field_upgrade_status:
+      und:
+        -
+          value: branch
   field_status:
     und:
       -
         value: |
-          Working well
+          See <a href="http://drupal.org/node/xxx">the issue queue</a> or
+          checkout the code <a href="http://github.com/larowlan/token">on
+          github</a>
         format: rich_text
   type: project
   uid: 1
@@ -28,3 +34,29 @@ project1:
       -
         value: Test bar
         format: rich_text
+
+token:
+  title: Pathauto
+  field_upgrade_status:
+      und:
+        -
+          value: branch
+  field_status:
+    und:
+      -
+        value: |
+          See <a href="http://drupal.org/node/xxx">the issue queue</a> or
+          checkout the code <a href="http://github.com/md-systems/pathauto">on
+          github</a>
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Fix baz
+        format: rich_text
+      -
+        value: Test foo
+        format: rich_text
+

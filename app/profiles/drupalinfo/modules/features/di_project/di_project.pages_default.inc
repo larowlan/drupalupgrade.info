@@ -16,7 +16,10 @@ function di_project_default_page_manager_pages() {
   $page->admin_title = 'Status (homepage)';
   $page->admin_description = 'Provides the overall status dashboard';
   $page->path = 'front';
-  $page->access = array();
+  $page->access = array(
+    'type' => 'none',
+    'settings' => NULL,
+  );
   $page->menu = array();
   $page->arguments = array();
   $page->conf = array(

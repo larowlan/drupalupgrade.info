@@ -63,7 +63,7 @@ function drupalinfo_install() {
   variable_set('admin_theme', 'seven');
   variable_set('node_admin_theme', '1');
 
-  // Create default beans.
+  // Create default content.
   try {
     foreach (file_scan_directory(__DIR__ . '/content', '/\.yml$/') as $file) {
       // Files are named {entity_type}s.yml.

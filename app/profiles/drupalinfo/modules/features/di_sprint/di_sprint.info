@@ -1,11 +1,12 @@
 name = DrupalUpgradeInfo Sprint
-core = 7.x
 description = Provides the sprint content type
+core = 7.x
 package = DrupalUpgradeInfo
 dependencies[] = addressfield
 dependencies[] = date
 dependencies[] = di_project
 dependencies[] = di_sponsor
+dependencies[] = di_update
 dependencies[] = entityreference
 dependencies[] = features
 dependencies[] = geocoder

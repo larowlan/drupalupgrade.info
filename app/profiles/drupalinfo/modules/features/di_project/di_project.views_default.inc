@@ -47,13 +47,19 @@ function di_project_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['label'] = 'Extension Name';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Upgrade Status */
+  $handler->display->display_options['fields']['field_upgrade_status']['id'] = 'field_upgrade_status';
+  $handler->display->display_options['fields']['field_upgrade_status']['table'] = 'field_data_field_upgrade_status';
+  $handler->display->display_options['fields']['field_upgrade_status']['field'] = 'field_upgrade_status';
+  $handler->display->display_options['fields']['field_upgrade_status']['label'] = 'Releases Available';
   /* Field: Content: Status */
   $handler->display->display_options['fields']['field_status']['id'] = 'field_status';
   $handler->display->display_options['fields']['field_status']['table'] = 'field_data_field_status';
   $handler->display->display_options['fields']['field_status']['field'] = 'field_status';
+  $handler->display->display_options['fields']['field_status']['label'] = 'Current Status';
   /* Field: Content: Priorities */
   $handler->display->display_options['fields']['field_priorities']['id'] = 'field_priorities';
   $handler->display->display_options['fields']['field_priorities']['table'] = 'field_data_field_priorities';

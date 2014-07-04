@@ -1,7 +1,7 @@
 name = DrupalUpgradeInfo blocks
+description = Provides basic block type
 core = 7.x
 package = DrupalUpgradeInfo
-description = Provides basic block type
 dependencies[] = bean_admin_ui
 dependencies[] = ctools
 dependencies[] = features
