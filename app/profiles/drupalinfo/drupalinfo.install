@@ -78,4 +78,5 @@ function drupalinfo_install() {
   catch (Exception $e) {
     watchdog_exception('drupalinfo', $e);
   }
+  variable_set('site_frontpage', 'front');
 }

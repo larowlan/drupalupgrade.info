@@ -35,7 +35,7 @@ token:
         value: Test bar
         format: rich_text
 
-token:
+pathauto:
   title: Pathauto
   field_upgrade_status:
       und:
