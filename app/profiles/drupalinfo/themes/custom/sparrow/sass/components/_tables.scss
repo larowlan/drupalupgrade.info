@@ -1,0 +1,28 @@
+table {
+  tr {
+    td, th {
+      padding: 0.5em 0.75em;
+      border: 1px solid $drupal-blue;
+      font-size: 0.9em;
+    }
+    th {
+      background-color: $th-bg;
+      color: $th-fg;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-spacing: -0.1em;
+    }
+    td {
+      vertical-align: top;
+      ul {
+        margin: 0;
+      }
+    }
+    &.even {
+      background-color: $tr-bg;
+    }
+    &.odd {
+      background-color: lighten($tr-bg, 5%);
+    }
+  }
+}

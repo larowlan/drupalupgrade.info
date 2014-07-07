@@ -1,0 +1,10 @@
+#header {
+  background: $drupal-blue-dusk;
+  color: white;
+  #name-and-slogan {
+    padding: rhythm(0.5);
+    h1.header__site-name a.header__site-link {
+      color: white;
+    }
+  }
+}

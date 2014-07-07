@@ -110,6 +110,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
   // Establish a vertical rhythm unit using $base-line-height.
   @include adjust-leading-to(1);
+  color: $body-fg;
 }
 
 @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
@@ -126,6 +127,7 @@ html {
 body {
   margin: 0;
   padding: 0;
+  background: $dark-blue image-url('bg.jpg') 50% 0 no-repeat;
 }
 
 /**
@@ -135,13 +137,15 @@ body {
  * http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states
  */
 a:link {
+  color: $link-fg;
 }
 a:visited {
+  color: $dark-blue;
 }
 a:hover,
-a:focus {
-}
+a:focus,
 a:active {
+  color: $dusty-blue;
 }
 
 /* Address `outline` inconsistency between Chrome and other browsers. */
@@ -212,7 +216,9 @@ h6 {
   @include leader(1, $h6-font-size);
   @include trailer(1, $h6-font-size);
 }
-
+h1,h2,h3,h4,h5,h6 {
+  color: $dark-blue;
+}
 /* Address styling not present in IE 8/9, Safari 5, and Chrome. */
 abbr[title] {
   border-bottom: 1px dotted;

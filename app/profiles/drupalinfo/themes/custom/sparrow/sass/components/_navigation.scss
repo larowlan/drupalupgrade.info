@@ -1,0 +1,29 @@
+#content {
+  margin-top: rhythm(1);
+}
+#navigation {
+  background: $dusty-blue;
+  ul.menu, ul.links {
+    li {
+      margin-top: 10px;
+      padding: 10px 20px;
+      a:hover {
+        background: white;
+        color: $link-fg;
+        border-bottom: 2px solid $drupal-blue-dusk;
+      }
+      a {
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+    li.active {
+      background: white;
+      a {
+        background: white;
+        color: $link-fg;
+      }
+    }
+  }
+}

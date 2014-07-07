@@ -74,6 +74,7 @@ $h6-font-size: 0.67 * $base-font-size;
 $times-new-roman: "Times New Roman", Times, Georgia, "DejaVu Serif", serif;
 $times:           Times, "Times New Roman", Georgia, "DejaVu Serif", serif;
 $georgia:         Georgia, "Times New Roman", "DejaVu Serif", serif;
+$arimo:           'Arimo', sans-serif;
 
 $verdana:         Verdana, Tahoma, "DejaVu Sans", sans-serif;
 $tahoma:          Tahoma, Verdana, "DejaVu Sans", sans-serif;
@@ -85,8 +86,8 @@ $arial:           Arial, Helvetica, "Nimbus Sans L", sans-serif;
 $courier:         "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
 
 // Now create some variables for the font stacks we want to use on this site.
-$base-font-family: $verdana; // The font family set on the html element.
-$font-body:        $verdana;
+$base-font-family: $arimo; // The font family set on the html element.
+$font-body:        $arimo;
 $font-monospace:   $courier;
 
 
@@ -103,6 +104,18 @@ $nav-height: 3em;
 // Tab styling.
 $tabs-container-bg: #fff;
 $tabs-border: #bbb;
+
+$drupal-blue: #00ACDC;
+$drupal-blue-light: #1FCBFB;
+$drupal-blue-dusk: #05C8FF;
+$dusty-blue: #00789B;
+$dark-blue: #005F7A;
+$th-bg: $drupal-blue;
+$th-fg: #fff;
+$tr-bg: lighten($drupal-blue, 95%);
+$body-fg: #222222;
+$table-border: $drupal-blue;
+$link-fg: $drupal-blue;
 
 
 // =============================================================================
