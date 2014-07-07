@@ -11,7 +11,7 @@
   <!-- ============= -->
 
   <!-- Drupal -->
-  <property name="drupal.siteName" value="Drupal Upgrade Status" />
+  <property name="drupal.siteName" value="&quot;Drupal 8 Extension Status&quot;" />
   <property name="drupal.email" value="user@example.com" />
   <property name="drupal.user" value="admin" />
   <property name="drupal.pass" value="power" />
@@ -93,6 +93,10 @@
     <phingcall target="vagrant:run">
       <!-- After some properties for inside the Vagrant host. -->
       <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app site-install drupalinfo -y --db-url=${mysql.queryString} --account-mail=${drupal.email} --account-name=${drupal.user} --account-pass=${drupal.pass} --site-name=${drupal.siteName}" />
+    </phingcall>
+    <phingcall target="vagrant:run">
+      <!-- After some properties for inside the Vagrant host. -->
+      <property name="vagrant.cmd" value="cd ${vagrant.dir}; bin/drush -r ${vagrant.dir}/app -l ${app.uri} uli" />
     </phingcall>
   </target>
 
