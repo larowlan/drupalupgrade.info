@@ -79,4 +79,8 @@ function drupalinfo_install() {
     watchdog_exception('drupalinfo', $e);
   }
   variable_set('site_frontpage', 'front');
+  variable_set('site_name', 'Drupal 8 Extension Status');
+  foreach (array(DRUPAL_ANONYMOUS_RID, DRUPAL_AUTHENTICATED_RID) as $rid) {
+    user_role_grant_permissions($rid, array('view any basic bean'));
+  }
 }
