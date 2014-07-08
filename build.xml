@@ -122,4 +122,27 @@
     </phingcall>
   </target>
 
+  <!--                 -->
+  <!-- Compass targets -->
+  <!-- =============== -->
+
+  <target name="compass:compile"
+          depends="compass:clean"
+          description="Compile all sass files for production">
+    <exec command="bundle exec compass compile -e production --force ${project.basedir}/app/profiles/drupalinfo/themes/custom/sparrow"
+          passthru="${test.passthru}" />
+  </target>
+
+  <target name="compass:watch"
+          depends="compass:clean"
+          description="Watch sass directories for changes and compile files on change">
+    <exec command="bundle exec compass watch -e development ${project.basedir}/app/profiles/drupalinfo/themes/custom/sparrow"
+          passthru="${test.passthru}" />
+  </target>
+  <target name="compass:clean"
+          description="Cleanup compass files">
+    <exec command="bundle exec compass clean ${project.basedir}/app/profiles/drupalinfo/themes/custom/sparrow"
+          passthru="${test.passthru}" />
+  </target>
+
 </project>

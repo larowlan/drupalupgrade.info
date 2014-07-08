@@ -27,6 +27,23 @@ Vagrant/Puppet manifests: Adapted from github.com/nickshuch/vd8 by Nick Schuch (
 
 ## Requirements for local dev
 
+### Bundler
+
+Install required gems for theme development with
+
+```
+bundle install --path vendor/bundle
+```
+
+Build sass with one of
+```
+phing compass:watch
+```
+or
+```
+phing compass:compile
+```
+
 ### Virtualbox (4.3.6)
 
 Virtualbox can be downloaded and installed from:
