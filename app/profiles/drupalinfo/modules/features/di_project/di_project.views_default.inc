@@ -32,12 +32,34 @@ function di_project_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
     'title' => 'title',
+    'field_upgrade_status' => 'field_upgrade_status',
+    'field_status' => 'field_status',
+    'field_priorities' => 'field_priorities',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
     'title' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_upgrade_status' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_status' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_priorities' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -51,10 +73,19 @@ function di_project_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   /* Field: Content: Upgrade Status */
+  $handler->display->display_options['fields']['field_upgrade_status_1']['id'] = 'field_upgrade_status_1';
+  $handler->display->display_options['fields']['field_upgrade_status_1']['table'] = 'field_data_field_upgrade_status';
+  $handler->display->display_options['fields']['field_upgrade_status_1']['field'] = 'field_upgrade_status';
+  $handler->display->display_options['fields']['field_upgrade_status_1']['label'] = '';
+  $handler->display->display_options['fields']['field_upgrade_status_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_upgrade_status_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_upgrade_status_1']['type'] = 'list_key';
+  /* Field: Content: Upgrade Status */
   $handler->display->display_options['fields']['field_upgrade_status']['id'] = 'field_upgrade_status';
   $handler->display->display_options['fields']['field_upgrade_status']['table'] = 'field_data_field_upgrade_status';
   $handler->display->display_options['fields']['field_upgrade_status']['field'] = 'field_upgrade_status';
   $handler->display->display_options['fields']['field_upgrade_status']['label'] = 'Releases Available';
+  $handler->display->display_options['fields']['field_upgrade_status']['element_class'] = 'state-[field_upgrade_status_1]';
   /* Field: Content: Status */
   $handler->display->display_options['fields']['field_status']['id'] = 'field_status';
   $handler->display->display_options['fields']['field_status']['table'] = 'field_data_field_status';

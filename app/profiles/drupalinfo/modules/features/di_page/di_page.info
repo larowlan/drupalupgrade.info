@@ -1,7 +1,7 @@
 name = DrupalUpgradeInfo page
+description = provides the page content type
 core = 7.x
 package = DrupalUpgradeInfo
-description = provides the page content type
 dependencies[] = di_update
 dependencies[] = features
 dependencies[] = node
