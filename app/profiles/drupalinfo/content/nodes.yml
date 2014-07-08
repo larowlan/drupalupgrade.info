@@ -60,3 +60,140 @@ pathauto:
         value: Test foo
         format: rich_text
 
+webform:
+  title: Webform
+  field_upgrade_status:
+      und:
+        -
+          value: none
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
+
+imce:
+  title: IMCE
+  field_upgrade_status:
+      und:
+        -
+          value: dev
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
+
+google_analytics:
+  title: Google Analytics
+  field_upgrade_status:
+      und:
+        -
+          value: alpha
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
+
+backup_migrate:
+  title: Backup & Migrate
+  field_upgrade_status:
+      und:
+        -
+          value: beta
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
+
+views_slideshow:
+  title: Views Slideshow
+  field_upgrade_status:
+      und:
+        -
+          value: rc
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
+
+rules:
+  title: Rules
+  field_upgrade_status:
+      und:
+        -
+          value: full
+  field_status:
+    und:
+      -
+        value: |
+          Lorem Ipsum
+        format: rich_text
+  type: project
+  uid: 1
+  field_priorities:
+    und:
+      -
+        value: Do this
+        format: rich_text
+      -
+        value: Then that
+        format: rich_text
