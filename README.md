@@ -105,3 +105,8 @@ To install (warning will delete all files and database)
 ```
 phing reinstall
 ```
+
+## Theme
+
+Looks a bit like this so far
+![](https://dl.dropbox.com/s/vu7ami790yx9pyh/Screenshot%202014-07-09%2010.27.35.png)
