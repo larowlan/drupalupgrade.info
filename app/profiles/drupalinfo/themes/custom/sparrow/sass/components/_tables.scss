@@ -16,6 +16,59 @@ table {
       vertical-align: top;
       ul {
         margin: 0;
+        padding-left: 15px;
+        li {
+          line-height: 1.4em;
+        }
+      }
+      &.views-field-field-upgrade-status:before {
+        font-family: FontAwesome;
+        font-size: 1.5em;
+        position: relative;
+        top: 3px;
+        padding-right: 5px;
+      }
+      &.state-branch {
+        &:before {
+          content: '\f085';
+          color: $state-red;
+        }
+      }
+      &.state-none {
+        &:before {
+          content: '\f071';
+          color: $state-red;
+        }
+      }
+      &.state-dev {
+        &:before {
+          content: '\f085';
+          color: $state-orange;
+        }
+      }
+      &.state-rc {
+        &:before {
+          content: '\f00c';
+          color: $state-orange;
+        }
+      }
+      &.state-alpha {
+        &:before {
+          content: '\f00c';
+          color: $state-orange;
+        }
+      }
+      &.state-beta {
+        &:before {
+          content: '\f00c';
+          color: $state-yellow;
+        }
+      }
+      &.state-full {
+        &:before {
+          content: '\f00c';
+          color: $state-green;
+        }
       }
     }
     &.even {

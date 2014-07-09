@@ -275,14 +275,17 @@
 %tabs__tab {
   float: left; /* LTR */
   margin: 0 3px;
+  @include border-top-radius(5px);
+  border-width: 2px;
 }
 %tabs__tab-link {
-  border: 1px solid #e9e9e9;
+  @include border-top-radius(5px);
   border-right: 0;
   border-bottom: 0;
   display: block;
   @include adjust-leading-to(1);
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* Primary tabs. */
@@ -291,38 +294,36 @@
 }
 .tabs-primary__tab {
   @extend %tabs__tab;
-  @include border-top-radius(4px);
-  @include single-text-shadow(#fff, 1px, 1px, 0);
   border: 1px solid $tabs-border;
   border-bottom-color: transparent;
   /* IE 9 and earlier don't understand gradients. */
   border-bottom: 0 \0/ie;
+  background: $dark-blue;
 }
 .tabs-primary__tab.is-active {
   @extend .tabs-primary__tab;
   border-bottom-color: $tabs-container-bg;
+  background: white;
 }
 
 // We use 3 placeholder styles to prevent @extend from going selector crazy.
 %tabs-primary__tab-link {
   @extend %tabs__tab-link;
-  @include border-top-radius(4px);
   @include transition(background-color 0.3s);
-  color: #333;
-  background-color: #dedede;
-  letter-spacing: 1px;
-  padding: 0 1em;
+  color: white;
+  background-color: $dark-blue;
+  padding: 0.33em 1em;
   text-align: center;
+  font-size: 0.8em;
 }
 %tabs-primary__tab-link-is-hover {
-  background-color: #e9e9e9;
-  border-color: #f2f2f2;
+  background-color: $dusty-blue;
+  border-color: $drupal-blue-light;
 }
 %tabs-primary__tab-link-is-active {
   background-color: transparent;
-  @include filter-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0));
-  @include background-image(linear-gradient(rgba(#e9e9e9, 1), rgba(#e9e9e9, 0)));
-  border-color: #fff;
+  border-color: white;
+  border-bottom-width: 1px;
 }
 
 a.tabs-primary__tab-link {
@@ -339,6 +340,7 @@ a.tabs-primary__tab-link {
 a.tabs-primary__tab-link.is-active {
   @extend %tabs-primary__tab-link;
   @extend %tabs-primary__tab-link-is-active;
+  color: $dark-blue;
 }
 
 /* Secondary tabs. */
@@ -357,9 +359,7 @@ a.tabs-primary__tab-link.is-active {
 // We use 3 placeholder styles to prevent @extend from going selector crazy.
 %tabs-secondary__tab-link {
   @extend %tabs__tab-link;
-  @include border-radius(.75em);
   @include transition(background-color 0.3s);
-  @include single-text-shadow(#fff, 1px, 1px, 0);
   background-color: #f2f2f2;
   color: #666;
   padding: 0 .5em;
@@ -370,7 +370,6 @@ a.tabs-primary__tab-link.is-active {
   color: #333;
 }
 %tabs-secondary__tab-link-is-active {
-  @include single-text-shadow(#333, 1px, 1px, 0);
   background-color: #666;
   border-color: #000;
   color: #fff;

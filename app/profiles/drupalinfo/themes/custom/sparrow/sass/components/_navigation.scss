@@ -3,6 +3,9 @@
 }
 #navigation {
   background: $dusty-blue;
+  #main-menu {
+    margin-left: 10px;
+  }
   ul.menu, ul.links {
     li {
       margin-top: 10px;
@@ -23,6 +26,7 @@
       a {
         background: white;
         color: $link-fg;
+        border-bottom: 2px solid $drupal-blue-dusk;
       }
     }
   }

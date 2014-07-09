@@ -103,13 +103,17 @@ $nav-height: 3em;
 
 // Tab styling.
 $tabs-container-bg: #fff;
-$tabs-border: #bbb;
 
 $drupal-blue: #00ACDC;
 $drupal-blue-light: #1FCBFB;
 $drupal-blue-dusk: #05C8FF;
 $dusty-blue: #00789B;
 $dark-blue: #005F7A;
+$tabs-border: $dark-blue;
+$state-orange:#FFB300;
+$state-red:#FF2300;
+$state-green:#00FF4D;
+$state-yellow:#F0E000;
 $th-bg: $drupal-blue;
 $th-fg: #fff;
 $tr-bg: lighten($drupal-blue, 95%);

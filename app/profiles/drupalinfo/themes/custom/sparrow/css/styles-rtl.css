@@ -11,13 +11,11 @@
 /**
  * Lists
  */
-/* line 9, ../sass/_normalize-rtl.scss */
 dd {
   margin: 0 30px 0 0;
 }
 
 /* Address paddings set differently in IE 6/7. */
-/* line 14, ../sass/_normalize-rtl.scss */
 menu,
 ol,
 ul {
@@ -45,19 +43,16 @@ ul {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 86, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 88, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
     width: 66.66667%;
     margin-right: 33.33333%;
     margin-left: -100%;
   }
-  /* line 93, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
     width: 33.33333%;
@@ -68,19 +63,16 @@ ul {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 101, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 2 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 3rd column from left. */
   }
-  /* line 103, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: right;
     width: 66.66667%;
     margin-right: 0%;
     margin-left: -66.66667%;
   }
-  /* line 108, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: right;
     width: 33.33333%;
@@ -91,27 +83,23 @@ ul {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 116, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 2 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Start a new row and span all 3 columns. */
   }
-  /* line 118, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: right;
     width: 66.66667%;
     margin-right: 33.33333%;
     margin-left: -100%;
   }
-  /* line 123, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: right;
     width: 33.33333%;
     margin-right: 0%;
     margin-left: -33.33333%;
   }
-  /* line 128, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
     width: 100%;
@@ -125,7 +113,6 @@ ul {
     /* Span 1 column, starting in the 2nd column from left. */
     /* Span 1 column, starting in the 3rd column from left. */
   }
-  /* line 134, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -135,7 +122,6 @@ ul {
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 138, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     float: right;
     width: 33.33333%;
@@ -143,14 +129,12 @@ ul {
     margin-left: -33.33333%;
     clear: right;
   }
-  /* line 143, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     float: right;
     width: 33.33333%;
     margin-right: 33.33333%;
     margin-left: -66.66667%;
   }
-  /* line 147, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     float: right;
     width: 33.33333%;
@@ -165,19 +149,16 @@ ul {
   /**
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 164, ../sass/layouts/_responsive.scss */
   .sidebar-first {
     /* Span 4 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
   }
-  /* line 166, ../sass/layouts/_responsive.scss */
   .sidebar-first #content {
     float: right;
     width: 80%;
     margin-right: 20%;
     margin-left: -100%;
   }
-  /* line 171, ../sass/layouts/_responsive.scss */
   .sidebar-first .region-sidebar-first {
     float: right;
     width: 20%;
@@ -188,19 +169,16 @@ ul {
   /**
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../sass/layouts/_responsive.scss */
   .sidebar-second {
     /* Span 4 columns, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 181, ../sass/layouts/_responsive.scss */
   .sidebar-second #content {
     float: right;
     width: 80%;
     margin-right: 0%;
     margin-left: -80%;
   }
-  /* line 186, ../sass/layouts/_responsive.scss */
   .sidebar-second .region-sidebar-second {
     float: right;
     width: 20%;
@@ -211,27 +189,23 @@ ul {
   /**
    * The layout when there are two sidebars.
    */
-  /* line 194, ../sass/layouts/_responsive.scss */
   .two-sidebars {
     /* Span 3 columns, starting in 2nd column from left. */
     /* Span 1 column, starting in 1st column from left. */
     /* Span 1 column, starting in 5th column from left. */
   }
-  /* line 196, ../sass/layouts/_responsive.scss */
   .two-sidebars #content {
     float: right;
     width: 60%;
     margin-right: 20%;
     margin-left: -80%;
   }
-  /* line 201, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-first {
     float: right;
     width: 20%;
     margin-right: 0%;
     margin-left: -20%;
   }
-  /* line 206, ../sass/layouts/_responsive.scss */
   .two-sidebars .region-sidebar-second {
     float: right;
     width: 20%;
@@ -248,13 +222,11 @@ ul {
  * Branding header.
  */
 /* Wrapping link for logo. */
-/* line 11, ../sass/components/_misc-rtl.scss */
 .header__logo {
   float: right;
 }
 
 /* The secondary menu (login, etc.) */
-/* line 16, ../sass/components/_misc-rtl.scss */
 .header__secondary-menu {
   float: left;
 }
@@ -263,12 +235,10 @@ ul {
  * Navigation bar.
  */
 /* Main menu and secondary menu links and menu block links. */
-/* line 26, ../sass/components/_misc-rtl.scss */
 #navigation .links,
 #navigation .menu {
   text-align: right;
 }
-/* line 30, ../sass/components/_misc-rtl.scss */
 #navigation .links li,
 #navigation .menu li {
   /* A simple method to get navigation links to appear in one line. */
@@ -279,7 +249,6 @@ ul {
 /**
  * Messages.
  */
-/* line 41, ../sass/components/_misc-rtl.scss */
 .messages, .messages--status, .messages--warning, .messages--error {
   padding: 10px 50px 10px 10px;
   background-position: 99% 8px;
@@ -288,8 +257,7 @@ ul {
 /**
  * Tabs.
  */
-/* line 58, ../sass/components/_misc-rtl.scss */
-.tabs-primary__tab, .tabs-secondary__tab,
+.tabs-primary__tab, .tabs-primary__tab.is-active, .tabs-secondary__tab,
 .tabs-secondary__tab.is-active {
   float: right;
 }
@@ -298,7 +266,6 @@ ul {
  * Inline styles.
  */
 /* List of links */
-/* line 77, ../sass/components/_misc-rtl.scss */
 .inline li {
   /* Bug in Safari causes display: inline to fail. */
   display: inline-block;
@@ -306,7 +273,6 @@ ul {
 }
 
 /* The inline field label used by the Fences.module */
-/* line 84, ../sass/components/_misc-rtl.scss */
 span.field-label {
   padding: 0 0 0 1em;
 }
@@ -314,17 +280,14 @@ span.field-label {
 /**
  * "More" links.
  */
-/* line 91, ../sass/components/_misc-rtl.scss */
 .more-link {
   text-align: left;
 }
 
-/* line 94, ../sass/components/_misc-rtl.scss */
 .more-help-link {
   text-align: left;
 }
 
-/* line 97, ../sass/components/_misc-rtl.scss */
 .more-help-link a {
   background-position: 100% 50%;
   padding: 1px 20px 1px 0;
@@ -333,7 +296,6 @@ span.field-label {
 /**
  * Menus.
  */
-/* line 105, ../sass/components/_misc-rtl.scss */
 .menu__item.is-collapsed {
   list-style-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
 }
@@ -342,7 +304,6 @@ span.field-label {
  * Comments.
  */
 /* Nested comments are indented. */
-/* line 117, ../sass/components/_misc-rtl.scss */
 .indented {
   margin-left: 0;
   margin-right: 30px;
@@ -352,12 +313,10 @@ span.field-label {
  * Forms.
  */
 /* Drupal's default login form block */
-/* line 127, ../sass/components/_misc-rtl.scss */
 #user-login-form {
   text-align: right;
 }
 
-/* line 131, ../sass/components/_misc-rtl.scss */
 html.js #user-login-form li.openid-link,
 #user-login-form li.openid-link {
   /* Un-do some of the padding on the ul list. */
@@ -368,7 +327,6 @@ html.js #user-login-form li.openid-link,
 /*
  * Drupal admin tables.
  */
-/* line 142, ../sass/components/_misc-rtl.scss */
 form th {
   text-align: right;
   padding-left: 1em;
@@ -380,13 +338,11 @@ form th {
  *
  * @see collapse.js
  */
-/* line 155, ../sass/components/_misc-rtl.scss */
 html.js .collapsible .fieldset-legend {
   background-position: 98% 75%;
   padding-left: 0;
   padding-right: 15px;
 }
-/* line 160, ../sass/components/_misc-rtl.scss */
 html.js .collapsed .fieldset-legend {
   background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHAQMAAAD+nMWQAAAABlBMVEX///8AAABVwtN+AAAAAXRSTlMAQObYZgAAABNJREFUCB1j4GASYFJgcmD+A4IADUIDfIUMT4wAAAAASUVORK5CYII=');
   background-position: 98% 50%;

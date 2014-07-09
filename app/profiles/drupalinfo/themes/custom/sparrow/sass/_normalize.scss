@@ -469,6 +469,7 @@ input[type="submit"] {
   @if $legacy-support-for-ie7 {
     *overflow: visible; /* 4 */
   }
+  @include button(white, $dark-blue, $dusty-blue, $drupal-blue-dusk, $drupal-blue-light, #999);
 }
 
 /**
@@ -534,6 +535,9 @@ textarea {
 label {
   display: block;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: $dark-blue;
 }
 
 /**

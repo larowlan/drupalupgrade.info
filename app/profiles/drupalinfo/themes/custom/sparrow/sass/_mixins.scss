@@ -35,3 +35,24 @@
     @include element-invisible-off;
   }
 }
+
+@mixin button($color, $fill, $fill-hover, $border, $border-hover, $shadow) {
+  background: $fill;
+  border: 1px solid $border;
+  display: inline-block;
+  padding: 6px 21px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  @include border-radius(5px);
+  @include box-shadow(0 2px 0 0 $shadow);
+  color: $color;
+  @include single-transition(all, 0.3s, ease);
+  &:hover, &:focus {
+    @include single-transition(all, 0.3s, ease);
+    background: $fill-hover;
+    border: 1px solid $border-hover;
+    color: white;
+  }
+}

@@ -1,0 +1,56 @@
+// Suppress this section of CSS for RTL layouts since it contains no LTR-specific styles.
+@if $zen-reverse-all-floats == false {
+  /* Apply the shared properties of grid items in a single, efficient ruleset. */
+  .sparrow-2col{
+    .panel-col-last, .panel-col-first {
+      // See the note about $zen-auto-include-item-base above.
+      @include zen-grid-item-base();
+    }
+  }
+}
+
+/**
+ * Use 3 grid columns for smaller screens.
+ */
+@media all and (min-width: 480px) and (max-width: 959px) {
+
+  $zen-column-count: 3;
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sparrow-2col {
+    /* Span 2 columns, starting in 1st column from left. */
+    .panel-col-first {
+      @include zen-grid-item(2, 1);
+    }
+
+    /* Span 1 column, starting in 3rd column from left. */
+    .panel-col-last {
+      @include zen-grid-item(1, 3);
+    }
+  }
+}
+
+/**
+ * Use 5 grid columns for larger screens.
+ */
+@media all and (min-width: 960px) {
+
+  $zen-column-count: 5;
+
+  /**
+   * The layout when there is only one sidebar, the right one.
+   */
+  .sparrow-2col {
+    /* Span 4 columns, starting in 1st column from left. */
+    .panel-col-first {
+      @include zen-grid-item(4, 1);
+    }
+
+    /* Span 1 column, starting in 5th column from left. */
+    .panel-col-last {
+      @include zen-grid-item(1, 5);
+    }
+  }
+}
