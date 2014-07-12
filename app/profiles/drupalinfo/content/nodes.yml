@@ -20,7 +20,7 @@ token:
     und:
       -
         value: |
-          See <a href="http://drupal.org/node/xxx">the issue queue</a> or
+          See <a href="https://www.drupal.org/node/1962358">the issue queue</a> or
           checkout the code <a href="http://github.com/larowlan/token">on
           github</a>
         format: rich_text
@@ -45,7 +45,7 @@ pathauto:
     und:
       -
         value: |
-          See <a href="http://drupal.org/node/xxx">the issue queue</a> or
+          See <a href="http://drupal.org/node/2168193">the issue queue</a> or
           checkout the code <a href="http://github.com/md-systems/pathauto">on
           github</a>
         format: rich_text
