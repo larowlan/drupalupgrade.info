@@ -1,0 +1,13 @@
+.view-sprints {
+  .feed-icon, .view-footer {
+    text-align: right;
+  }
+  .view-footer {
+    font-size: 0.9em;
+  }
+  .views-row-last {
+    .node-sprint.node-teaser {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -26,9 +26,11 @@
 
 // Nodes.
 @import "components/nodes/update";
+@import "components/nodes/sprint";
 
 // Views.
 @import "components/views/latest";
+@import "components/views/sprints";
 
 // Optionally, add your own components here.
 @import "print";

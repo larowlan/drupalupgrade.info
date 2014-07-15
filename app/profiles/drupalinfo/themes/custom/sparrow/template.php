@@ -35,6 +35,20 @@ function sparrow_preprocess_node(&$vars, $hook) {
 }
 
 /**
+ * Preprocess node hook for sprint.
+ */
+function sparrow_preprocess_node_sprint(&$vars, $hook) {
+  $node = $vars['node'];
+  $vars['field_sprint_date_month'] = $vars['field_sprint_date_day'] = FALSE;
+  if ($date_items = field_get_items('node', $node, 'field_sprint_date')) {
+    if ($date_item = reset($date_items)) {
+      $vars['field_sprint_date_month'] = format_date($date_item['value'], 'custom', 'M');
+      $vars['field_sprint_date_day'] = format_date($date_item['value'], 'custom', 'j');
+    }
+  }
+}
+
+/**
  * Implements theme_breadcrumb().
  */
 function sparrow_breadcrumb($vars) {

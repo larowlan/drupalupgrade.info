@@ -1,0 +1,32 @@
+.node-teaser.node-sprint {
+  @include zen-grid-container();
+  header {
+    @include zen-grid-item(4, 2);
+  }
+  .inner {
+    @include zen-grid-item(1, 1);
+    .sprint-date {
+      max-width: 100px;
+      border: 1px solid $drupal-blue;
+      color: $drupal-blue;
+      text-align: center;
+      .sprint-month {
+        background-color: $drupal-blue;
+        color: white;
+        text-transform: uppercase;
+      }
+    }
+  }
+  h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: rhythm(0.25);
+    padding-left: 10px;
+    a {
+      text-decoration: none;
+    }
+  }
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: rhythm(1);
+}

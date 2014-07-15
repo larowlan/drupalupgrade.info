@@ -1783,6 +1783,51 @@ table tr.odd {
   text-decoration: none;
 }
 
+.node-teaser.node-sprint {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: 1.5em;
+}
+.node-teaser.node-sprint:before, .node-teaser.node-sprint:after {
+  content: "";
+  display: table;
+}
+.node-teaser.node-sprint:after {
+  clear: both;
+}
+.node-teaser.node-sprint header {
+  float: left;
+  width: 80%;
+  margin-left: 20%;
+  margin-right: -100%;
+}
+.node-teaser.node-sprint .inner {
+  float: left;
+  width: 20%;
+  margin-left: 0%;
+  margin-right: -20%;
+}
+.node-teaser.node-sprint .inner .sprint-date {
+  max-width: 100px;
+  border: 1px solid #00acdc;
+  color: #00acdc;
+  text-align: center;
+}
+.node-teaser.node-sprint .inner .sprint-date .sprint-month {
+  background-color: #00acdc;
+  color: white;
+  text-transform: uppercase;
+}
+.node-teaser.node-sprint h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0.375em;
+  padding-left: 10px;
+}
+.node-teaser.node-sprint h3 a {
+  text-decoration: none;
+}
+
 .view-latest .feed-icon, .view-latest .view-footer {
   text-align: right;
 }
@@ -1790,6 +1835,16 @@ table tr.odd {
   font-size: 0.9em;
 }
 .view-latest .views-row-last .node-update.node-teaser {
+  margin-bottom: 0;
+}
+
+.view-sprints .feed-icon, .view-sprints .view-footer {
+  text-align: right;
+}
+.view-sprints .view-footer {
+  font-size: 0.9em;
+}
+.view-sprints .views-row-last .node-sprint.node-teaser {
   margin-bottom: 0;
 }
 
