@@ -114,8 +114,8 @@ function di_project_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'more_link' => 1,
-      'items_per_page' => '10',
+      'more_link' => 0,
+      'items_per_page' => '5',
       'override_title' => 0,
       'override_title_text' => '',
     );
@@ -138,8 +138,8 @@ function di_project_default_page_manager_pages() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'more_link' => 1,
-      'items_per_page' => '10',
+      'more_link' => 0,
+      'items_per_page' => '5',
       'override_title' => 0,
       'override_title_text' => '',
     );
