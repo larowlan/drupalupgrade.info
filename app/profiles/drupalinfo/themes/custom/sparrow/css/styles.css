@@ -115,7 +115,7 @@ html {
   -webkit-text-size-adjust: 100%;
   /* 2 */
   line-height: 1.5em;
-  color: #222222;
+  color: #6f6f6f;
 }
 
 /* Remove default margin. */
@@ -1042,6 +1042,12 @@ table {
 /**
  * Breadcrumb navigation.
  */
+.breadcrumb {
+  font-size: 0.8em;
+  margin: 0 10px 0.75em;
+  padding-bottom: 0.75em;
+  border-bottom: 1px solid #eee;
+}
 .breadcrumb ol {
   margin: 0;
   padding: 0;
@@ -1763,6 +1769,30 @@ table tr.even {
 }
 table tr.odd {
   background-color: white;
+}
+
+.node-teaser.node-update {
+  font-size: 0.9em;
+  line-height: 1.4em;
+  margin-bottom: 1.5em;
+}
+.node-teaser.node-update h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 0.375em;
+}
+.node-teaser.node-update h3 a {
+  text-decoration: none;
+}
+
+.view-latest .feed-icon, .view-latest .view-footer {
+  text-align: right;
+}
+.view-latest .view-footer {
+  font-size: 0.9em;
+}
+.view-latest .views-row-last .node-update.node-teaser {
+  margin-bottom: 0;
 }
 
 /**

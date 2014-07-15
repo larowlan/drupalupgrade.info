@@ -167,6 +167,10 @@
  * Breadcrumb navigation.
  */
 .breadcrumb {
+  font-size: 0.8em;
+  margin: 0 10px rhythm(0.5);
+  padding-bottom: rhythm(0.5);
+  border-bottom: 1px solid #eee;
   ol {
     margin: 0;
     padding: 0;

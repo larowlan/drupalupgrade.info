@@ -1,0 +1,13 @@
+.view-latest {
+  .feed-icon, .view-footer {
+    text-align: right;
+  }
+  .view-footer {
+    font-size: 0.9em;
+  }
+  .views-row-last {
+    .node-update.node-teaser {
+      margin-bottom: 0;
+    }
+  }
+}
