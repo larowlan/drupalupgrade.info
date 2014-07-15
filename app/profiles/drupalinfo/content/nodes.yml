@@ -201,25 +201,59 @@ rules:
 update1:
   title: Token development returns to Drupal.org
   body:
-      und:
-        -
-          value: |
-            After rapid development on github, the existing token port has been
-            moved back to drupal.org with the maintainer merging the work and
-            creating an 8.x branch. Great work all!.
-          format: rich_text
+    und:
+      -
+        value: |
+          After rapid development on github, the existing token port has been
+          moved back to drupal.org with the maintainer merging the work and
+          creating an 8.x branch. Great work all!.
+        format: rich_text
   type: update
   uid: 1
 
 update2:
   title: Productive sprint in Switzerland
   body:
-      und:
-        -
-          value: |
-            Over 9 sprinters turned up for a productive contrib sprint on Drupal
-            8. Works was completed on several key modules and fun was had by
-            all.
-          format: rich_text
+    und:
+      -
+        value: |
+          Over 9 sprinters turned up for a productive contrib sprint on Drupal
+          8. Works was completed on several key modules and fun was had by
+          all.
+        format: rich_text
   type: update
+  uid: 1
+
+sprint1:
+  title: Drupalaton 2014
+  field_sprint_date:
+    und:
+      -
+        value: 1436956687
+  body:
+    und:
+      -
+        value: |
+          Drupalaton lorem ipsum Duis sed lobortis nisl, vel interdum lacus.
+          Integer feugiat lacus et arcu lobortis, non porta tortor
+          pellentesque.
+        format: rich_text
+  type: sprint
+  uid: 1
+
+sprint2:
+  title: Gold Coast Contrib Sprint
+  field_sprint_date:
+    und:
+      -
+        value: 1439635087
+  body:
+    und:
+      -
+        value: |
+          Gold Coast lorem ipsum Duis sed lobortis nisl, vel interdum lacus.
+          Integer feugiat lacus et arcu lobortis, non porta tortor
+          pellentesque.
+        format: rich_text
+  type: sprint
   uid: 1
