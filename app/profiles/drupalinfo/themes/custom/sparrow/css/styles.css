@@ -1689,8 +1689,6 @@ tr.selected td {
   padding: 10px 20px;
 }
 #navigation ul.menu li a:hover, #navigation ul.links li a:hover {
-  background: white;
-  color: #00acdc;
   border-bottom: 2px solid #05c8ff;
 }
 #navigation ul.menu li a, #navigation ul.links li a {
